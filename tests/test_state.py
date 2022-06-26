@@ -1,5 +1,5 @@
-from ..code.classes.board import Board
-from ..code.classes.state import State
+from ..src.classes.board import Board
+from ..src.classes.state import State
 
 
 def test_restore_to_hash():

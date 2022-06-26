@@ -2,10 +2,11 @@ from enum import Enum
 
 
 class Car:
-    def __init__(self, name: str, orientation: str, length: int):
+    def __init__(self, name: str, orientation: str, length: int, lane: int):
         self.name = name
         self.orientation: Car.Orientation = self.Orientation.direction_off(orientation)
         self.length: int = length
+        self.lane: int = lane
 
     class Orientation(Enum):
         HORIZONTAL = 0
